@@ -153,7 +153,17 @@ header .title {
   left: 50%;
   transform: translate(-50%, -50%);
   margin-top: 25px;
-  overflow: scroll;
+  overflow-x: scroll;
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.menu .card-list::-webkit-scrollbar {
+  display: none;
+}
+/* Hide scrollbar for IE, Edge and Firefox */
+.menu .card-list {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
 }
 
 .menu .card {
@@ -246,7 +256,7 @@ footer .social-list > div {
 @media screen and (max-width: 1024px) {
   .menu .card-list {
     width: 100%;
-    grid-template-columns: repeat(4, 50%);
+    grid-template-columns: repeat(4, 47%);
   }
 }
 
